@@ -16,7 +16,7 @@ management:
 info:
   author: Daniel M. Nascimento
   github: https://github.com/danielspiker
-  Checkpoint: 1
+  task: Checkpoint 1
 server:
   port: ${PORT:9991}
 message: Checkpoint 1
