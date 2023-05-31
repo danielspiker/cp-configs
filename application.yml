@@ -15,7 +15,8 @@ management:
 #      show-details: always
 info:
   author: Daniel M. Nascimento
-  github: https://github.com/danielspiker 
+  github: https://github.com/danielspiker
+  Checkpoint: 1
 server:
   port: ${PORT:9991}
-message: I just called... to say... i love you
+message: Checkpoint 1
