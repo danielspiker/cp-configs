@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+#  endpoint:
+#    health:
+#      show-details: always
+info:
+  author: Daniel M. Nascimento
+  github: https://github.com/danielspiker 
+server:
+  port: ${PORT:9991}
+message: I just called... to say... i love you
