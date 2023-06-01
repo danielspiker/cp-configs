@@ -3,19 +3,15 @@ server:
 spring:
   cloud:
     gateway:
-#      default-filters:
-#        - name: LogFilter
       routes:
-        - id: animalRoute
-          uri: lb://ANIMAL-SERVICE
+        - id: movieRoute
+          uri: lb://MOVIE-SERVICE
           predicates:
-            - Path=/animal/**
-#          filters:
-#            - name: SubscriptionFilter
-        - id: specieRoute
-          uri: lb://SPECIE-SERVICE
+            - Path=/movies/**
+        - id: catalogRoute
+          uri: lb://CATALOG-SERVICE
           predicates:
-            - Path=/specie/**
+            - Path=/catalog/**
           filters:
-            - AddRequestHeader=animal-request-header, custom-animal-request-header
-            - AddResponseHeader=animal-response-header, custom-animal-response-header
+            - AddRequestHeader=movie-request-header, custom-movie-request-header
+            - AddResponseHeader=movie-response-header, custom-movie-response-header
